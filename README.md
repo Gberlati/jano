@@ -1,24 +1,19 @@
-# README
+# Jano
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ - Ruby: 3.2.1
+ - Rails: 7.0.4.2
 
-Things you may want to cover:
+ ## Development
 
-* Ruby version
+Para iniciar el servidor de Rails, es necesario usar:
 
-* System dependencies
+ ```bash
+  ./bin/dev
+```
 
-* Configuration
+Esto permite que TailwindCSS actualice los assets en cada cambio de un html.
 
-* Database creation
+ ## Dependencias
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Mongoid
+ - TailwindCSS
