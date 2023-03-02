@@ -25,6 +25,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem "mongoid"
+gem "webpacker"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -67,3 +68,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "tailwindcss-rails", "~> 2.0"
