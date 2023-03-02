@@ -5,6 +5,11 @@
 
  ## Development
 
+´´´bash
+  bundle install
+  yarn
+´´´
+
 Para iniciar el servidor de Rails, es necesario usar:
 
  ```bash
