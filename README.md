@@ -16,5 +16,6 @@ Esto permite que TailwindCSS actualice los assets en cada cambio de un html.
 
  ## Dependencias
 
- - Mongoid
- - TailwindCSS
+ - **Mongoid**
+ - **TailwindCSS**
+ - **Carrierwave**: No puede utilizarse Active Storage por incompatibilidad con Mongoid.
