@@ -5,13 +5,7 @@ class Product
     store_in collection: "products"
 
     embeds_many :publications
-    
-    # Campos deprecados
-    # field :remote_id, type: String
-    # field :content, type: Hash
-    # field :last_sync, type: DateTime, default: Time.at(0)
-    # field :versions, type: Array, default: []
-    
+
     field :sku, type: String
     field :name, type: String, default: ''
     field :description, type: String, default: ''
@@ -19,7 +13,7 @@ class Product
     field :price, type: String, default: 0.00
     field :list_price, type: String, default: 0.00
     field :active, type: Boolean, default: true
-    field :packages, type: Array, default: []
+    field :packages, type: Array, default: [] # { width, height, length, weight }
     field :tags, type: Array, default: []
     field :stock_type, type: String, default: 'numeric' # infinite, numeric
     field :stock_quantity, type: Integer, default: 0
@@ -32,6 +26,7 @@ class Product
     index({sku: 1}, {background: true})
     index({sku: 1, name: 1}, {background: true})
     index({tags: 1}, {background: true})
+    index({active: 1}, {background: true})
     
     index({stock_type: 1}, {background: true})
     index({stock_quantity: 1}, {background: true})
