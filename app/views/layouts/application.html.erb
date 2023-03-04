@@ -14,24 +14,16 @@
     />
   </head>
 
-  <body>
-    <main class="bg-grey-200">
-      <span
-        class="absolute text-white text-4xl top-5 left-4 cursor-pointer"
-        onclick="openSidebar()"
-      >
-      </span>
+  <body class="bg-gray-100">
+    <main class="w-full grid grid-cols-12 gap-4 min-h-screen">
+      
       <div
-        class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900"
+        class="sidebar col-span-3 top-0 bottom-0 left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900"
       >
         <div class="text-gray-100 text-xl">
           <div class="p-2.5 mt-1 flex items-center">
             
             <h1 class="font-bold text-gray-100 text-[18px] ml-3">Jano</h1>
-            <i
-              class="bi bi-x cursor-pointer ml-28 lg:hidden"
-              onclick="openSidebar()"
-            ></i>
           </div>
           <div class="my-2 bg-gray-600 h-[1px]"></div>
         </div>
@@ -68,8 +60,9 @@
         </div>
       </div>  
 
+      <div class="col-span-9">
       <%= yield %>
-
+      </div>
     </main>
 
     <script type="text/javascript">
