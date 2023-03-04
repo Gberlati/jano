@@ -5,7 +5,7 @@ class Publication
   store_in collection: 'publications'
 
   embedded_in :product
-  belongs_to :channel
+  belongs_to :integration
 
   field :status, type: String
   field :options, type: Hash
