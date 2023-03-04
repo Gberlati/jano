@@ -12,9 +12,7 @@ class Product
     field :extra_information, type: Hash, default: {}
 
     field :name, type: String
-    mount_uploader :image, ProductImageUploader
-
-    before_save :clear_image
+    mount_uploaders :images, ProductImageUploader
 
     index({last_sync: 1}, {background: true})
     index({remote_id: 1}, {background: true})
@@ -27,7 +25,3 @@ class Product
     index({"versions.collection_id": 1, "versions.version": 1}, {background: true})
     index({"versions": 1}, {background: true})
   end
-
-  def clear_image
-    self.image = nil
-  end  

@@ -1,4 +1,6 @@
 <h1><%= @product.name %></h1>
 
-<p><%= @product.image %></p>
-<img src="<%= @product.image%>">
+<% @product.images.each do |image| %>
+    <p><%= image %></p>
+    <img src="<%= image.url%>">
+<% end %>
