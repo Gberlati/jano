@@ -1,3 +1,5 @@
+require 'csv'
+
 class ProductsController < ApplicationController
     
     def index
@@ -32,10 +34,32 @@ class ProductsController < ApplicationController
         end
     end
     
+    def create_bulk
+        
+        if params[:csv_file].present?
+            csv_data = File.read(params[:csv_file])
+            csv = CSV.parse(csv_data, :headers => true)
+
+            @new_products = []
+            csv.each do |row|
+                product = Product.new(
+                    sku: row["sku"],
+                    name: row["nombre"],
+                    description: row["descripcion"],
+                    list_price: row["precio_lista"],
+                    price: row["precio_descuento"],
+                    active: row["activo"],
+                    tags: row["tags"])
+                
+                @new_products << product
+            end
+        end
+    end
+
     private
     
     def product_params
-        params.require(:product).permit(:name, {images: []})
+        params.require(:product).permit(:sku,:name,:description,:price,:list_price,:active,:tags, {images: []})
     end
     
 end

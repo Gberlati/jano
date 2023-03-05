@@ -17,7 +17,7 @@ class Product
   field :tags, type: Array, default: []
   field :stock_type, type: String, default: 'numeric' # infinite, numeric
   field :stock_quantity, type: Integer, default: 0
-  field :attributes, type: Array, default: [] # { name, values }
+  field :product_attributes, type: Array, default: [] # { name, values }
   field :variations, type: Array, default: [] # { sku, attributes, stock_type, stock_quantity }
   field :extra_information, type: Hash, default: {}
 
