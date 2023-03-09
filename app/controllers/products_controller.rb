@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
             @new_products = []
             csv.each do |row|
                 product = Product.new(
-                    sku: row["sku"],
+                    sku: row["codigo"],
                     name: row["nombre"],
                     description: row["descripcion"],
                     list_price: row["precio_lista"],
