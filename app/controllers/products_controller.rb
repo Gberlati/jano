@@ -56,10 +56,16 @@ class ProductsController < ApplicationController
         end
     end
 
+    def create_bulk_update_list
+        puts("Product Data:")
+        puts(params[:product_data].inspect)
+        
+    end
+
     private
     
     def product_params
-        params.require(:product).permit(:sku,:name,:description,:price,:list_price,:active,:tags, {images: []})
+        params.require(:product).permit(:sku,:name,:description,:price,:list_price,:active,:tags, {images: []},:product_data)
     end
     
 end

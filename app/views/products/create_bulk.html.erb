@@ -28,63 +28,63 @@
     </div>
 
     <% if @new_products.present? %>
+        <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
+            <thead class="bg-gray-50 text-sm">
+                <tr>
+                    <th scope="col" class="px-6 py-4 text-center">
+                        <input type="checkbox" class="rounded accent-gray-600" checked>
+                    </th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
+                    
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
 
-        
+                <% @new_products.each do |product| %>
+                    <%= form_tag({ action: 'create_bulk_update_list'}, multipart: true ) do %>
+                    <tr class="hover:bg-gray-50">
 
-            <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
-                <thead class="bg-gray-50 text-sm">
-                    <tr>
-                        <th scope="col" class="px-6 py-4 text-center">
-                            <input type="checkbox" class="rounded accent-gray-600" checked>
-                        </th>
-                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
-                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
-                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
-                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
-                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
-                        
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
+                        <td class="text-center">
+                            <input type="checkbox" class="rounded" checked>
+                        </td>
+                        <div class="relative h-10 w-10 ">
+                            <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+                        </div>
+                        <td class="px-6 py-4">
+                            <%= product["name"] %>
+                        </td>
+                        <td class="px-6 py-4">
+                            <%= product["list_price"] %>
+                        </td>
+                        <td class="px-6 py-4">
+                        <div class="flex gap-2">
+                            <!-- TODO: Loop en Tags para agregar categorias -->
+                            
+                            <span
+                            class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+                            >
+                            Star Wars
+                            </span>
 
-                    <% @new_products.each do |product| %>
-                        <tr class="hover:bg-gray-50">
-
-                            <td class="text-center">
-                                <input type="checkbox" class="rounded" checked>
-                            </td>
-                            <div class="relative h-10 w-10 ">
-                                <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+                        </div>
+                        </td>
+                        <td class="px-6 py-4 flex align-left gap-2">
+                            <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
+                                <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
                             </div>
-                            <td class="px-6 py-4">
-                                <%= product["name"] %>
-                            </td>
-                            <td class="px-6 py-4">
-                                <%= product["list_price"] %>
-                            </td>
-                            <td class="px-6 py-4">
-                            <div class="flex gap-2">
-                                <!-- TODO: Loop en Tags para agregar categorias -->
-                                
-                                <span
-                                class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
-                                >
-                                Star Wars
-                                </span>
-
-                            </div>
-                            </td>
-                            <td class="px-6 py-4 flex align-left gap-2">
-                                <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
-                                    <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
-                                </div>
-                            </td>
-                        </tr>  
+                            <%= hidden_field_tag :product_data, value: product.id %>
+                            <%= file_field_tag 'product_image', onchange: 'this.form.submit();' , :class => "bi bi-plus-lg text-xl text-gray-500 border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm" %>
+                        </td>
+                    </tr>  
                     <% end %>
-                </tbody>
-            </table>
+                <% end %>
+            </tbody>
+        </table>
         
-
         <button class="inline-block rounded bg-green-200 px-6 pt-2.5 pb-2 mt-6 h-12 text-xs font-medium uppercase leading-normal text-green-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-green-accent-100 focus:bg-green-accent-100 focus:outline-none focus:ring-0 active:bg-green-accent-200">
             Guardar Productos
         </button>
