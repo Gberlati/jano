@@ -1036,3 +1036,237 @@ Processing by ProductsController#create_bulk as HTML
 Completed 200 OK in 24ms (Views: 22.8ms | MongoDB: 0.0ms | Allocations: 7622)
 
 
+Started GET "/" for 127.0.0.1 at 2023-03-12 11:07:36 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 124.2ms | Allocations: 37325)
+Completed 200 OK in 136ms (Views: 130.7ms | MongoDB: 0.0ms | Allocations: 39229)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:07:38 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 216)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6935)
+Completed 200 OK in 12ms (Views: 10.8ms | MongoDB: 0.0ms | Allocations: 7530)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:07:46 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.7ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 6943)
+Completed 200 OK in 25ms (Views: 23.6ms | MongoDB: 0.0ms | Allocations: 7622)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:08:04 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6976)
+Completed 200 OK in 19ms (Views: 18.0ms | MongoDB: 0.0ms | Allocations: 7656)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:08:06 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6396)
+Completed 200 OK in 14ms (Views: 13.5ms | MongoDB: 0.0ms | Allocations: 6643)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:08:11 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 9685)
+Completed 200 OK in 22ms (Views: 20.7ms | MongoDB: 0.0ms | Allocations: 10362)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:08:24 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.9ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 6899)
+Completed 200 OK in 22ms (Views: 20.4ms | MongoDB: 0.0ms | Allocations: 7577)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:12:01 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6965)
+Completed 200 OK in 9ms (Views: 8.3ms | MongoDB: 0.0ms | Allocations: 7643)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:12:43 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.0ms | Allocations: 275)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 7077)
+Completed 200 OK in 40ms (Views: 35.7ms | MongoDB: 0.0ms | Allocations: 7756)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:12:45 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 6490)
+Completed 200 OK in 7ms (Views: 7.0ms | MongoDB: 0.0ms | Allocations: 6736)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:17:20 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6976)
+Completed 200 OK in 19ms (Views: 14.2ms | MongoDB: 0.0ms | Allocations: 7653)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:17:33 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 3.1ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6966)
+Completed 200 OK in 24ms (Views: 22.6ms | MongoDB: 0.0ms | Allocations: 7644)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:18:02 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.4ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6943)
+Completed 200 OK in 9ms (Views: 8.4ms | MongoDB: 0.0ms | Allocations: 7621)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:18:18 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 6376)
+Completed 200 OK in 20ms (Views: 19.2ms | MongoDB: 0.0ms | Allocations: 6621)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:21:15 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 6934)
+Completed 200 OK in 19ms (Views: 17.7ms | MongoDB: 0.0ms | Allocations: 7611)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:22:10 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 6950)
+Completed 200 OK in 17ms (Views: 16.6ms | MongoDB: 0.0ms | Allocations: 7628)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:22:21 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 7062)
+Completed 200 OK in 17ms (Views: 15.9ms | MongoDB: 0.0ms | Allocations: 7741)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:22:45 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.3ms | Allocations: 253)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 7058)
+Completed 200 OK in 8ms (Views: 7.6ms | MongoDB: 0.0ms | Allocations: 7737)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:23:06 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6952)
+Completed 200 OK in 14ms (Views: 12.9ms | MongoDB: 0.0ms | Allocations: 7630)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:26:28 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 6958)
+Completed 200 OK in 17ms (Views: 16.4ms | MongoDB: 0.0ms | Allocations: 7636)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:27:50 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6948)
+Completed 200 OK in 16ms (Views: 15.3ms | MongoDB: 0.0ms | Allocations: 7626)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:44:09 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.6ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6948)
+Completed 200 OK in 9ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 7626)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:44:34 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6948)
+Completed 200 OK in 16ms (Views: 14.9ms | MongoDB: 0.0ms | Allocations: 7626)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:45:12 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 7068)
+Completed 200 OK in 18ms (Views: 16.9ms | MongoDB: 0.0ms | Allocations: 7747)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:45:24 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.2ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7065)
+Completed 200 OK in 20ms (Views: 19.2ms | MongoDB: 0.0ms | Allocations: 7744)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-12 11:46:20 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.2ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6938)
+Completed 200 OK in 21ms (Views: 20.1ms | MongoDB: 0.0ms | Allocations: 7616)
+
+
