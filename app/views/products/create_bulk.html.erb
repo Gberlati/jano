@@ -11,84 +11,122 @@
                         <li>Validar cada producto a crear y agregar las imagenes haciendo click en el +.</li>
                         <li>Hacer click en Crear Productos y listo!</li>
                     </ol>
-            </div>
-        </div>
 
-        <!-- Segunda card, formulario subida .csv -->
-        <div class="max-w-md rounded overflow-hidden shadow-lg pt-4 flex flex-column items-center ">
-            <div class="px-6 py-4">
-                <p class="text-gray-700 text-base pb-2">Subí el archivo .csv con los productos a cargar.</p>
-                <%= form_tag({ action: 'create_bulk' }, multipart: true) do %>
-                <%= file_field_tag 'csv_file', :class => "relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out file:-mx-3 file:-my-1.5 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-1.5 file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-neutral-200 focus:border-primary focus:bg-white focus:text-neutral-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none dark:bg-transparent dark:text-neutral-200 dark:focus:bg-transparent" %>
-                <%= submit_tag('Enviar Archivo', :class => "inline-block rounded bg-blue-200 px-6 pt-2.5 pb-2 mt-4 text-xs font-medium uppercase leading-normal text-blue-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-blue-accent-100 focus:bg-blue-accent-100 focus:outline-none focus:ring-0 active:bg-blue-accent-200") %>
-                </button>
-                <% end %>
+                <hr class="mt-2">
+                <p class="text-gray-700 text-base font-bold pb-2 pt-4">Subí el archivo .csv con los productos a cargar.</p>
+                <input type="file" name="input_csv" id="input_csv" accept=".csv" class="relative mb-4 m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out file:-mx-3 file:-my-1.5 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-1.5 file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-neutral-200 focus:border-primary focus:bg-white focus:text-neutral-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none dark:bg-transparent dark:text-neutral-200 dark:focus:bg-transparent">
+
+
             </div>
         </div>
     </div>
 
-    <% if @new_products.present? %>
-        <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
-            <thead class="bg-gray-50 text-sm">
-                <tr>
-                    <th scope="col" class="px-6 py-4 text-center">
-                        <input type="checkbox" class="rounded accent-gray-600" checked>
-                    </th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
-                    
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
+    <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
+        <thead class="bg-gray-50 text-sm">
+            <tr>
+                <th scope="col" class="px-6 py-4 text-center">
+                    <input type="checkbox" class="rounded accent-gray-600" checked>
+                </th>
+                <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
+                <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
+                <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
+                <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
+                <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
+                
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
 
-                <% @new_products.each do |product| %>
-                    <%= form_tag({ action: 'create_bulk_update_list'}, multipart: true ) do %>
-                    <tr class="hover:bg-gray-50">
+                <tr class="hover:bg-gray-50">
 
-                        <td class="text-center">
-                            <input type="checkbox" class="rounded" checked>
-                        </td>
-                        <div class="relative h-10 w-10 ">
-                            <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+                    <td class="text-center">
+                        <input type="checkbox" class="rounded" checked>
+                    </td>
+                    <div class="relative h-10 w-10 ">
+                        <td class="hover:bg-gray-200"> </td>
+                    </div>
+                    <td class="px-6 py-4">
+
+                    </td>
+                    <td class="px-6 py-4">
+                        
+                    </td>
+                    <td class="px-6 py-4">
+                    <div class="flex gap-2">
+                        <!-- TODO: Loop en Tags para agregar categorias -->
+                        
+                        <span
+                        class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+                        >
+                        Star Wars
+                        </span>
+
+                    </div>
+                    </td>
+                    <td class="px-6 py-4 flex align-left gap-2">
+                        <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
+                            <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
                         </div>
-                        <td class="px-6 py-4">
-                            <%= product["name"] %>
-                        </td>
-                        <td class="px-6 py-4">
-                            <%= product["list_price"] %>
-                        </td>
-                        <td class="px-6 py-4">
-                        <div class="flex gap-2">
-                            <!-- TODO: Loop en Tags para agregar categorias -->
-                            
-                            <span
-                            class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
-                            >
-                            Star Wars
-                            </span>
+                        <div class="bi bi-plus-lg text-xl text-gray-500 border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm"> </div>
+                    </td>
+                </tr>  
 
-                        </div>
-                        </td>
-                        <td class="px-6 py-4 flex align-left gap-2">
-                            <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
-                                <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
-                            </div>
-                            <%= hidden_field_tag :product_data, value: product.id %>
-                            <%= file_field_tag 'product_image', onchange: 'this.form.submit();' , :class => "bi bi-plus-lg text-xl text-gray-500 border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm" %>
-                        </td>
-                    </tr>  
-                    <% end %>
-                <% end %>
-            </tbody>
-        </table>
-        
-        <button class="inline-block rounded bg-green-200 px-6 pt-2.5 pb-2 mt-6 h-12 text-xs font-medium uppercase leading-normal text-green-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-green-accent-100 focus:bg-green-accent-100 focus:outline-none focus:ring-0 active:bg-green-accent-200">
-            Guardar Productos
-        </button>
-
-    <% end %>
+        </tbody>
+    </table>
+    
+    <button class="inline-block rounded bg-green-200 px-6 pt-2.5 pb-2 mt-6 h-12 text-xs font-medium uppercase leading-normal text-green-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-green-accent-100 focus:bg-green-accent-100 focus:outline-none focus:ring-0 active:bg-green-accent-200">
+        Guardar Productos
+    </button>
 
 </div>
+
+<script>
+
+    const inputFile = document.querySelector('#input_csv');
+    inputFile.addEventListener("change", (event) => {
+        
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        
+        if (file.size > 0) {
+            reader.readAsText(file);
+        }
+
+        reader.onload = (event) => {
+            const contents = event.target.result;
+            const lines = contents.split('\n');
+            const values = lines.map(line => line.split(','))
+ 
+            data = buildObject(lines)
+
+
+
+        }
+      }
+    ) 
+
+    function buildObject(lines) {
+
+        const keys = lines[0].split(',');
+        const objects = [];
+
+        for (let i = 1; i < lines.length; i++) {
+            const values = lines[i].split(',');
+            const obj = {};
+
+            for(let j=1; j < keys.length; j++) {
+                obj[keys[j]] = values[j];
+            }
+
+            objects.push(obj)
+        }
+        
+        return objects    
+    }
+
+    function buildTableRow(line) {
+
+    }
+
+
+</script>

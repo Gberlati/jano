@@ -199,3 +199,840 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 19ms (Views: 18.4ms | MongoDB: 0.0ms | Allocations: 6621)
 
 
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-05 14:32:01 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 6712)
+Completed 200 OK in 6ms (Views: 5.5ms | MongoDB: 0.0ms | Allocations: 6956)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-05 14:34:28 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0b422e6f8 @tempfile=#<Tempfile:/tmp/RackMultipart20230305-224-tao2i0.pdf>, @original_filename="Data-Science-in-Context-V.99-Web-Beta.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Data-Science-in-Context-V.99-Web-Beta.pdf\"\r\nContent-Type: application/pdf\r\n">, "commit"=>"Enviar Archivo"}
+Completed 500 Internal Server Error in 120ms (MongoDB: 0.0ms | Allocations: 31722)
+
+
+  
+CSV::MalformedCSVError (Invalid byte sequence in UTF-8 in line 2.):
+  
+/home/gonzalo/.rvm/rubies/ruby-3.2.1/lib/ruby/3.2.0/csv/parser.rb:879:in `build_scanner'
+/home/gonzalo/.rvm/rubies/ruby-3.2.1/lib/ruby/3.2.0/csv/parser.rb:400:in `parse'
+bin/rails:in `each'
+Started GET "/" for 127.0.0.1 at 2023-03-11 20:02:15 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 411)
+  Rendered layout layouts/application.html.erb (Duration: 344.7ms | Allocations: 122368)
+Completed 200 OK in 359ms (Views: 352.5ms | MongoDB: 0.0ms | Allocations: 125412)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:02:22 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1478)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 10809)
+Completed 200 OK in 50ms (Views: 48.5ms | MongoDB: 0.0ms | Allocations: 11403)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:10:17 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1080)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 7615)
+Completed 200 OK in 19ms (Views: 17.4ms | MongoDB: 0.0ms | Allocations: 8296)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:13:22 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.3ms | Allocations: 505)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 6731)
+Completed 200 OK in 10ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 6978)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:13:24 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 3.6ms | Allocations: 974)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 7506)
+Completed 200 OK in 24ms (Views: 22.8ms | MongoDB: 0.0ms | Allocations: 8183)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:14:48 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.7ms | Allocations: 886)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 7420)
+Completed 200 OK in 19ms (Views: 18.6ms | MongoDB: 0.0ms | Allocations: 8100)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:14:59 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f173d710 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-rm2eyr.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6440)
+Completed 200 OK in 21ms (Views: 18.8ms | MongoDB: 0.0ms | Allocations: 6938)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:08 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.5ms | Allocations: 750)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 7283)
+Completed 200 OK in 10ms (Views: 8.4ms | MongoDB: 0.0ms | Allocations: 8137)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:09 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 6571)
+Completed 200 OK in 21ms (Views: 20.0ms | MongoDB: 0.0ms | Allocations: 7015)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:11 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.5ms | Allocations: 370)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6727)
+Completed 200 OK in 11ms (Views: 10.7ms | MongoDB: 0.0ms | Allocations: 6973)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:13 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 6442)
+Completed 200 OK in 8ms (Views: 7.2ms | MongoDB: 0.0ms | Allocations: 6896)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:33 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.5ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7288)
+Completed 200 OK in 10ms (Views: 9.0ms | MongoDB: 0.0ms | Allocations: 8161)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:34 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6439)
+Completed 200 OK in 15ms (Views: 13.3ms | MongoDB: 0.0ms | Allocations: 6888)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:21:43 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4e31b9298 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-5pv5ty.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 6439)
+Completed 200 OK in 22ms (Views: 19.5ms | MongoDB: 0.0ms | Allocations: 6867)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:22:43 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 4.1ms | Allocations: 744)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 7277)
+Completed 200 OK in 18ms (Views: 15.9ms | MongoDB: 0.0ms | Allocations: 8149)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:22:55 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f074bd70 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-syykno.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.6ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6439)
+Completed 200 OK in 9ms (Views: 6.5ms | MongoDB: 0.0ms | Allocations: 6891)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:23:32 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f174bea0 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-f6xzt2.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.4ms | Allocations: 745)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7402)
+Completed 200 OK in 12ms (Views: 10.6ms | MongoDB: 0.0ms | Allocations: 8260)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:23:42 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6550)
+Completed 200 OK in 22ms (Views: 19.9ms | MongoDB: 0.0ms | Allocations: 6997)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:23:44 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.6ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6452)
+Completed 200 OK in 10ms (Views: 9.0ms | MongoDB: 0.0ms | Allocations: 6888)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:23:46 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.4ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6613)
+Completed 200 OK in 12ms (Views: 11.4ms | MongoDB: 0.0ms | Allocations: 6859)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:23:48 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6439)
+Completed 200 OK in 16ms (Views: 13.8ms | MongoDB: 0.0ms | Allocations: 6890)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:14 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.0ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10217)
+Completed 200 OK in 20ms (Views: 18.3ms | MongoDB: 0.0ms | Allocations: 10894)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:20 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f06f9570 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-b3r71s.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 6439)
+Completed 200 OK in 22ms (Views: 20.4ms | MongoDB: 0.0ms | Allocations: 6879)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:23 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6439)
+Completed 200 OK in 17ms (Views: 13.2ms | MongoDB: 0.0ms | Allocations: 6875)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:29 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f1747a30 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-6djo74.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.6ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6550)
+Completed 200 OK in 11ms (Views: 9.9ms | MongoDB: 0.0ms | Allocations: 6981)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:43 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.5ms | Allocations: 764)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 7429)
+Completed 200 OK in 18ms (Views: 16.7ms | MongoDB: 0.0ms | Allocations: 8321)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:29:51 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f0053950 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-4dedmz.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 6.4ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6440)
+Completed 200 OK in 16ms (Views: 14.1ms | MongoDB: 0.0ms | Allocations: 6889)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:35:19 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4e31b4a68 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-r92gpx.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.6ms | Allocations: 763)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7296)
+Completed 200 OK in 10ms (Views: 8.5ms | MongoDB: 0.0ms | Allocations: 8160)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:35:33 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f17435c0 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-ivr3w5.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6439)
+Completed 200 OK in 17ms (Views: 15.2ms | MongoDB: 0.0ms | Allocations: 6877)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:36:02 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.9ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7478)
+Completed 200 OK in 14ms (Views: 13.4ms | MongoDB: 0.0ms | Allocations: 8157)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:36:07 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f008fab8 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-mvktj9.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6439)
+Completed 200 OK in 15ms (Views: 13.9ms | MongoDB: 0.0ms | Allocations: 6877)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:36:16 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f0dfdd58 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-cbbump.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 6439)
+Completed 200 OK in 15ms (Views: 13.5ms | MongoDB: 0.0ms | Allocations: 6872)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:43:17 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.0ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 7576)
+Completed 200 OK in 16ms (Views: 15.4ms | MongoDB: 0.0ms | Allocations: 8255)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:43:28 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f005a390 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-wskv5y.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6439)
+Completed 200 OK in 9ms (Views: 8.3ms | MongoDB: 0.0ms | Allocations: 6902)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:43:29 -0300
+Processing by ProductsController#create_bulk as */*
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.8ms | Allocations: 291)
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:43:29 -0300
+Processing by ProductsController#create_bulk as */*
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 10733)
+Completed 200 OK in 33ms (Views: 31.6ms | MongoDB: 0.0ms | Allocations: 11167)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9964)
+Completed 200 OK in 23ms (Views: 22.4ms | MongoDB: 0.0ms | Allocations: 10281)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:44:01 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f1735420 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-4gg90h.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.3ms | Allocations: 748)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 7281)
+Completed 200 OK in 9ms (Views: 8.2ms | MongoDB: 0.0ms | Allocations: 8147)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:44:36 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f0f2a140 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-mvbnwo.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.5ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6549)
+Completed 200 OK in 11ms (Views: 10.1ms | MongoDB: 0.0ms | Allocations: 6987)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:45:19 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f0f24060 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-plu2cx.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 31.1ms | Allocations: 9899)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 9988)
+Completed 500 Internal Server Error in 35ms (MongoDB: 0.0ms | Allocations: 10859)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container pt-8">
+    <h1 class="text-2xl text-gray-900 font-bold p-2">Carga masiva de productos</h1>
+    <div class="flex flex-row gap-x-8"> 
+        
+        <!-- Primer card, como cargar productos -->
+        <div class="max-w-md rounded overflow-hidden shadow-lg pt-4 flex items-center flex-row">
+            <div class="px-6 py-4 ">
+                <h1 class="font-bold text-xl mb-4">Cómo cargar productos</h1>
+                    <ol class="list-decimal text-gray-700 text-base px-6 py-2">
+                        <li>Completar el archivo .csv y enviar el archivo.</li>
+                        <li>Validar cada producto a crear y agregar las imagenes haciendo click en el +.</li>
+                        <li>Hacer click en Crear Productos y listo!</li>
+                    </ol>
+            </div>
+        </div>
+
+        <!-- Segunda card, formulario subida .csv -->
+        <div class="max-w-md rounded overflow-hidden shadow-lg pt-4 flex flex-column items-center ">
+            <div class="px-6 py-4">
+                <p class="text-gray-700 text-base pb-2">Subí el archivo .csv con los productos a cargar.</p>
+                <input type="file" name="input_csv" id="input_csv" accept=".csv" class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out file:-mx-3 file:-my-1.5 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-1.5 file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-neutral-200 focus:border-primary focus:bg-white focus:text-neutral-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none dark:bg-transparent dark:text-neutral-200 dark:focus:bg-transparent">
+                <button id="submit_csv" class="inline-block rounded bg-blue-200 px-6 pt-2.5 pb-2 mt-4 text-xs font-medium uppercase leading-normal text-blue-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-blue-accent-100 focus:bg-blue-accent-100 focus:outline-none focus:ring-0 active:bg-blue-accent-200" >Enviar Archivo</button>
+                <% end %>
+            </div>
+        </div>
+    </div>
+
+    <% if @new_products.present? %>
+        <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
+            <thead class="bg-gray-50 text-sm">
+                <tr>
+                    <th scope="col" class="px-6 py-4 text-center">
+                        <input type="checkbox" class="rounded accent-gray-600" checked>
+                    </th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
+                    
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
+
+                <% @new_products.each do |product| %>
+                    <%= form_tag({ action: 'create_bulk_update_list'}, multipart: true ) do %>
+                    <tr class="hover:bg-gray-50">
+
+                        <td class="text-center">
+                            <input type="checkbox" class="rounded" checked>
+                        </td>
+                        <div class="relative h-10 w-10 ">
+                            <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+                        </div>
+                        <td class="px-6 py-4">
+                            <%= product["name"] %>
+                        </td>
+                        <td class="px-6 py-4">
+                            <%= product["list_price"] %>
+                        </td>
+                        <td class="px-6 py-4">
+                        <div class="flex gap-2">
+                            <!-- TODO: Loop en Tags para agregar categorias -->
+                            
+                            <span
+                            class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+                            >
+                            Star Wars
+                            </span>
+
+                        </div>
+                        </td>
+                        <td class="px-6 py-4 flex align-left gap-2">
+                            <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
+                                <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
+                            </div>
+                            <%= hidden_field_tag :product_data, value: product.id %>
+                            <%= file_field_tag 'product_image', onchange: 'this.form.submit();' , :class => "bi bi-plus-lg text-xl text-gray-500 border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm" %>
+                        </td>
+                    </tr>  
+                    <% end %>
+                <% end %>
+            </tbody>
+        </table>
+        
+        <button class="inline-block rounded bg-green-200 px-6 pt-2.5 pb-2 mt-6 h-12 text-xs font-medium uppercase leading-normal text-green-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-green-accent-100 focus:bg-green-accent-100 focus:outline-none focus:ring-0 active:bg-green-accent-200">
+            Guardar Productos
+        </button>
+
+    <% end %>
+
+</div>
+
+<script>
+    
+    const inputFile = document.querySelector('#input_csv');
+    console.log("Carga Script")
+    inputFile.addEventListener("change", (event) => {
+        
+        console.log("Trigger evento")
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const contents = event.target.result;
+            console.log("Evento onload")
+            const lines = contents.split('\n');
+            const values = lines.map(line => line.split(','))
+            console.log(values)
+            console.log(JSON.stringify(values)) 
+
+        }
+    }) 
+</script>
+):
+1:    <div class="container pt-8">
+2:        <h1 class="text-2xl text-gray-900 font-bold p-2">Carga masiva de productos</h1>
+3:        <div class="flex flex-row gap-x-8"> 
+4:            
+5:            <!-- Primer card, como cargar productos -->
+6:            <div class="max-w-md rounded overflow-hidden shadow-lg pt-4 flex items-center flex-row">
+7:                <div class="px-6 py-4 ">
+8:                    <h1 class="font-bold text-xl mb-4">Cómo cargar productos</h1>
+9:                        <ol class="list-decimal text-gray-700 text-base px-6 py-2">
+10:                            <li>Completar el archivo .csv y enviar el archivo.</li>
+11:                            <li>Validar cada producto a crear y agregar las imagenes haciendo click en el +.</li>
+12:                            <li>Hacer click en Crear Productos y listo!</li>
+13:                        </ol>
+14:                </div>
+15:            </div>
+16:    
+17:            <!-- Segunda card, formulario subida .csv -->
+18:            <div class="max-w-md rounded overflow-hidden shadow-lg pt-4 flex flex-column items-center ">
+19:                <div class="px-6 py-4">
+20:                    <p class="text-gray-700 text-base pb-2">Subí el archivo .csv con los productos a cargar.</p>
+21:                    <input type="file" name="input_csv" id="input_csv" accept=".csv" class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out file:-mx-3 file:-my-1.5 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-1.5 file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-neutral-200 focus:border-primary focus:bg-white focus:text-neutral-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none dark:bg-transparent dark:text-neutral-200 dark:focus:bg-transparent">
+22:                    <button id="submit_csv" class="inline-block rounded bg-blue-200 px-6 pt-2.5 pb-2 mt-4 text-xs font-medium uppercase leading-normal text-blue-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-blue-accent-100 focus:bg-blue-accent-100 focus:outline-none focus:ring-0 active:bg-blue-accent-200" >Enviar Archivo</button>
+23:                    <% end %>
+24:                </div>
+25:            </div>
+26:        </div>
+27:    
+28:        <% if @new_products.present? %>
+29:            <table class="w-full border-collapse shadow-sm bg-white text-left text-gray-600">
+30:                <thead class="bg-gray-50 text-sm">
+31:                    <tr>
+32:                        <th scope="col" class="px-6 py-4 text-center">
+33:                            <input type="checkbox" class="rounded accent-gray-600" checked>
+34:                        </th>
+35:                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">SKU</th>
+36:                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Título</th>
+37:                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Precio Lista</th>
+38:                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Tags</th>
+39:                        <th scope="col" class="px-6 py-4 font-medium text-gray-900">Imágenes</th>
+40:                        
+41:                    </tr>
+42:                </thead>
+43:                <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
+44:    
+45:                    <% @new_products.each do |product| %>
+46:                        <%= form_tag({ action: 'create_bulk_update_list'}, multipart: true ) do %>
+47:                        <tr class="hover:bg-gray-50">
+48:    
+49:                            <td class="text-center">
+50:                                <input type="checkbox" class="rounded" checked>
+51:                            </td>
+52:                            <div class="relative h-10 w-10 ">
+53:                                <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+54:                            </div>
+55:                            <td class="px-6 py-4">
+56:                                <%= product["name"] %>
+57:                            </td>
+58:                            <td class="px-6 py-4">
+59:                                <%= product["list_price"] %>
+60:                            </td>
+61:                            <td class="px-6 py-4">
+62:                            <div class="flex gap-2">
+63:                                <!-- TODO: Loop en Tags para agregar categorias -->
+64:                                
+65:                                <span
+66:                                class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-blue-600"
+67:                                >
+68:                                Star Wars
+69:                                </span>
+70:    
+71:                            </div>
+72:                            </td>
+73:                            <td class="px-6 py-4 flex align-left gap-2">
+74:                                <div class="border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm">
+75:                                    <i class="bi bi-plus-lg text-xl text-gray-500"> </i>                               
+76:                                </div>
+77:                                <%= hidden_field_tag :product_data, value: product.id %>
+78:                                <%= file_field_tag 'product_image', onchange: 'this.form.submit();' , :class => "bi bi-plus-lg text-xl text-gray-500 border rounded shadow-sm w-16 h-16 flex justify-center items-center hover:bg-white hover:shadow-sm" %>
+79:                            </td>
+80:                        </tr>  
+81:                        <% end %>
+82:                    <% end %>
+83:                </tbody>
+84:            </table>
+85:            
+86:            <button class="inline-block rounded bg-green-200 px-6 pt-2.5 pb-2 mt-6 h-12 text-xs font-medium uppercase leading-normal text-green-700 hover:cursor-pointer transition duration-150 ease-in-out hover:bg-green-accent-100 focus:bg-green-accent-100 focus:outline-none focus:ring-0 active:bg-green-accent-200">
+87:                Guardar Productos
+88:            </button>
+89:    
+90:        <% end %>
+91:    
+92:    </div>
+93:    
+94:    <script>
+95:        
+96:        const inputFile = document.querySelector('#input_csv');
+97:        console.log("Carga Script")
+98:        inputFile.addEventListener("change", (event) => {
+99:            
+100:            console.log("Trigger evento")
+101:            const file = event.target.files[0];
+102:            const reader = new FileReader();
+103:            reader.onload = (event) => {
+104:                const contents = event.target.result;
+105:                console.log("Evento onload")
+106:                const lines = contents.split('\n');
+107:                const values = lines.map(line => line.split(','))
+108:                console.log(values)
+109:                console.log(JSON.stringify(values)) 
+110:    
+111:            }
+112:        }) 
+113:    </script>
+  
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+app/views/products/create_bulk.html.erb:115: syntax error, unexpected `end'
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:45:26 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4f00112d0 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-xkdakq.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7128)
+Completed 200 OK in 10ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 7990)
+
+
+Started POST "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:50:06 -0300
+Processing by ProductsController#create_bulk as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input_csv"=>#<ActionDispatch::Http::UploadedFile:0x00007fc4e1e24430 @tempfile=#<Tempfile:/tmp/RackMultipart20230311-306-jzn5pe.csv>, @original_filename="carga_masiva_woocommerce.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"input_csv\"; filename=\"carga_masiva_woocommerce.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">}
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 7004)
+Completed 200 OK in 10ms (Views: 8.3ms | MongoDB: 0.0ms | Allocations: 7879)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:50:39 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.1ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 7165)
+Completed 200 OK in 10ms (Views: 9.1ms | MongoDB: 0.0ms | Allocations: 7842)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:55:10 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.2ms | Allocations: 463)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 7173)
+Completed 200 OK in 10ms (Views: 9.3ms | MongoDB: 0.0ms | Allocations: 7850)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:55:27 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.7ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 7289)
+Completed 200 OK in 19ms (Views: 18.0ms | MongoDB: 0.0ms | Allocations: 7968)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:55:36 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 3.0ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 7304)
+Completed 200 OK in 23ms (Views: 22.4ms | MongoDB: 0.0ms | Allocations: 7983)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:55:42 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 7170)
+Completed 200 OK in 9ms (Views: 8.7ms | MongoDB: 0.0ms | Allocations: 7848)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:56:04 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.8ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7138)
+Completed 200 OK in 10ms (Views: 9.6ms | MongoDB: 0.0ms | Allocations: 7816)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:56:21 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.9ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 9920)
+Completed 200 OK in 38ms (Views: 36.7ms | MongoDB: 0.0ms | Allocations: 10598)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:56:28 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.3ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 7150)
+Completed 200 OK in 18ms (Views: 17.0ms | MongoDB: 0.0ms | Allocations: 7828)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 20:56:33 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.9ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7185)
+Completed 200 OK in 29ms (Views: 27.1ms | MongoDB: 0.0ms | Allocations: 7864)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:02:48 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.9ms | Allocations: 500)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 7317)
+Completed 200 OK in 9ms (Views: 8.7ms | MongoDB: 0.0ms | Allocations: 7996)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:04:05 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.8ms | Allocations: 497)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7208)
+Completed 200 OK in 29ms (Views: 27.4ms | MongoDB: 0.0ms | Allocations: 7887)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:04:56 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.2ms | Allocations: 484)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 7179)
+Completed 200 OK in 12ms (Views: 11.0ms | MongoDB: 0.0ms | Allocations: 7857)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:14:51 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1481)
+Completed 500 Internal Server Error in 4ms (MongoDB: 0.0ms | Allocations: 2139)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    35:         </thead>
+    36:         <tbody class="divide-y divide-gray-100 border-t border-gray-100 text-md">
+    37: 
+    38:             <% @new_products.each do |product| %>
+    39:                 <%= form_tag({ action: 'create_bulk_update_list'}, multipart: true ) do %>
+    40:                 <tr class="hover:bg-gray-50">
+    41: 
+  
+app/views/products/create_bulk.html.erb:38
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:15:08 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1298)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1386)
+Completed 500 Internal Server Error in 5ms (MongoDB: 0.0ms | Allocations: 2042)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x00000000021d90>):
+    41:                         <input type="checkbox" class="rounded" checked>
+    42:                     </td>
+    43:                     <div class="relative h-10 w-10 ">
+    44:                         <td class="hover:bg-gray-200"> <%= product["sku"] %> </td>
+    45:                     </div>
+    46:                     <td class="px-6 py-4">
+    47:                         <%= product["name"] %>
+  
+app/views/products/create_bulk.html.erb:44
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:16:02 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.7ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7064)
+Completed 200 OK in 16ms (Views: 15.2ms | MongoDB: 0.0ms | Allocations: 7741)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:16:45 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 1.0ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6954)
+Completed 200 OK in 19ms (Views: 17.5ms | MongoDB: 0.0ms | Allocations: 7631)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:16:56 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 0.5ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6954)
+Completed 200 OK in 12ms (Views: 10.8ms | MongoDB: 0.0ms | Allocations: 7631)
+
+
+Started GET "/products/create_bulk" for 127.0.0.1 at 2023-03-11 21:16:59 -0300
+Processing by ProductsController#create_bulk as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/create_bulk.html.erb within layouts/application
+  Rendered products/create_bulk.html.erb within layouts/application (Duration: 2.4ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 6945)
+Completed 200 OK in 24ms (Views: 22.8ms | MongoDB: 0.0ms | Allocations: 7622)
+
+
